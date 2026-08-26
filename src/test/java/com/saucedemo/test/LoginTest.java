@@ -32,7 +32,7 @@ public class LoginTest extends TestBase {
         LoginPage loginPage = new LoginPage(driver, OR);
         loginPage.login(inputData.getProperty("validUsernameValue"), inputData.getProperty("validPasswordValue"));
 
-        test.log(Status.PASS, "Login exitoso");
+        test.log(Status.PASS, "Login Fallado");
         test.pass(MediaEntityBuilder.createScreenCaptureFromPath(utils.captureScreen(this.driver, config.getProperty("testEvidencePath"))).build());
 
         Thread.sleep(2000);
