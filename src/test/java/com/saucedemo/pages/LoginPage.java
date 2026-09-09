@@ -23,7 +23,7 @@ public class LoginPage {
 
         usernameLocator = By.id(OR.getProperty("usernameInputID"));
         passwordLocator = By.id(OR.getProperty("passwordInputID"));
-        loginButtonLocator = By.className(OR.getProperty("loginBtnClassName"));
+        loginButtonLocator = By.id(OR.getProperty("loginBtnID"));
     }
 
     public void llenarEmail(String email) {
