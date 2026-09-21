@@ -15,7 +15,7 @@ public class LoginPage {
     public By usernameLocator;
     public By passwordLocator;
     public By loginButtonLocator;
-    public By textoLoginLocator;
+    //public By textoLoginLocator;
 
     public LoginPage(WebDriver driver, Properties props) {
         this.driver = driver;
