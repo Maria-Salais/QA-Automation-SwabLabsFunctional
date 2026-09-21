@@ -42,7 +42,7 @@ public class LoginTest extends TestBase {
         loginBaseURL = config.getProperty("loginBaseURL");
 
         driver.get(loginBaseURL);
-        driver.manage().window().maxim                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    ize();
+        driver.manage().window().maximize();
 
         ExtentTest test = this.report.createTest("TC-002 - Login de usuario exitoso con credenciales válidas (Page Object Model)");
 
