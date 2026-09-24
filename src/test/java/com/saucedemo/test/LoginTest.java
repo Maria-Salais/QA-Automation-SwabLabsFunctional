@@ -6,9 +6,7 @@ import com.saucedemo.base.TestBase;
 
 
 import com.saucedemo.pages.LoginPage;
-import org.testng.annotations.AfterClass;
-import org.testng.annotations.AfterMethod;
-import org.testng.annotations.AfterTest;
+
 import org.testng.annotations.Test;
 
 import java.io.IOException;
@@ -35,7 +33,7 @@ public class LoginTest extends TestBase {
         test.log(Status.PASS, "Login Fallado");
         test.pass(MediaEntityBuilder.createScreenCaptureFromPath(utils.captureScreen(this.driver, config.getProperty("testEvidencePath"))).build());
 
-        Thread.sleep(2000);
+
     }
     @Test(priority = 2)
     public void loginExitosoPOM() throws InterruptedException, IOException {
@@ -55,7 +53,7 @@ public class LoginTest extends TestBase {
         test.log(Status.PASS, "Login Exitoso");
         test.pass(MediaEntityBuilder.createScreenCaptureFromPath(utils.captureScreen(this.driver, config.getProperty("testEvidencePath"))).build());
 
-        Thread.sleep(2000);
+
     }
 
 
